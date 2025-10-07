@@ -49,3 +49,24 @@ Substitutions map ingredient → alternatives in data/substitutions.json.
 Ingredient tags are optional metadata for future enhancements.
 License
 MIT
+
+
+Gap2Dish — a data-driven flavour pairing and recipe discovery platform that models the relationships between ingredients, recipes and sensory attributes to help home cooks, recipe developers and food-tech teams discover better, more creative combinations.
+
+How it works 
+1)Data collection
+Gather recipes and ingredient info from cookbooks, websites or your dataset.
+2)Build the flavor graph
+Create nodes for ingredients (and optionally recipes or taste attributes).
+Add edges between nodes when ingredients appear together in recipes; weight edges by how often or how strongly they co-occur
+3)Generate recommendations
+For a given ingredient or recipe, find nearby nodes in the graph, rank them by score, and return top pairings or substitutions.
+Apply filters (dietary limits, cuisine, availability) to keep suggestions practical.
+
+Tech highlights
+Python — backend (Flask app; see app.py and requirements.txt)
+HTML — frontend templates or static pages
+CSS — styling for the web UI
+JavaScript — client-side interactivity or API calls
+JSON — API request/response payloads
+Markdown — docs/README
